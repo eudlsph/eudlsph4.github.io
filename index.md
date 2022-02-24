@@ -1,8 +1,9 @@
-## Welcome to GitHub Pages
-By Eugene Gabriel F. de los Santos
-You can use the [editor on GitHub](https://github.com/eudlsph/eudlsph4.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# THE PECULIAR GALLERY
+#### By Eugene Gabriel F. de los Santos
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Delve through this website to see how bizzarre the internet can be. Made by numerous great creators, these pieces have their own significance and meaning. 
+
+
 
 ### Markdown
 
