@@ -1,382 +1,362 @@
-Ethereal by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dimension:Dilemma by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-This is Ethereal, my latest, greatest, and quite possibly most unique template for HTML5 UP.
-Since releasing Parallelism 3-4 years ago (!!!), I've been dying to do another side-scrolling
-template with more in the way of flexibility/customization potential. The result is this template,
-Ethereal, which combines a robust side-scrolling framework of my own creation (with various
-"scroll-assist" features like drag/momentum scrolling, keyboard shortcuts, etc.) with a unique
-look and feel, a lightbox gallery, tons of customization options, and, of course, full
-responsiveness. Hope you dig it :)
-
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
-
-Instructions:
-
-	Overview
-	========
-
-		Browsers deal with side-scrolling pages differently to vertically-oriented ones in
-		that they require elements (or at the very least, the top-most wrapper element) to
-		have a defined (fixed) width. This leads to a number of limitations (eg. the page
-		won't automatically grow/shrink in the same way a vertically-oriented one will), so
-		Ethereal does two things to work around this:
-
-		- The entire page is made up of "panel" elements, each of which can be assigned an
-		  optional "size" modifier (satisfying the fixed width requirement).
-
-		- For panels that don't use a size modifier, individual containing elements *inside*
-		  them (eg. a column) can be assigned a "span" modifier to give those a fixed width
-		  instead (also satisfying the fixed width requirement).
-
-		Another fun quirk of side-scrolling pages is how to actually implement horizontal
-		scrolling *without* resorting to using the (usually ugly) horizontal scrollbar.
-		Ethereal does this in FOUR (!) ways:
-
-		- Dragging: Users can simply click and drag the page left or right to scroll it around.
-		  This works exactly as you'd expect, and even has a nice "post-scroll momentum" effect.
-
-		- Scroll Wheel: Ethereal modifies* the scroll wheel's behavior to translate vertical
-		  scrolling into horizontal scrolling, allowing the user to use either the scroll wheel
-		  or trackpad to scroll the page (the latter of which retains the ability to horziontally
-		  scroll as normal, so nothing changes there).
-
-		  * Special thanks to @miorel + @pieterv of Facebook for "normalizeWheel()" :)
-
-		- Scroll Zones: Users can hover the mouse cursor on the left or right edges of the page
-		  to automatically scroll in either direction.
-
-		- Keyboard Shortcuts: Finally, users can simply use the left/right arrows, page up/down,
-		  home/end, and the spacebar to scroll the page.
-
-		Note that any (or all) of these scroll-assist features can be turned off (and in some
-		cases customized). See the top of assets/js/main.js for more information.
-
-
-	Span Modifiers
-	==============
-
-		Span modifiers are simply classes that give elements a fixed width, the size of which
-		is determined by the "unit value" associated with the modifier (eg. "span-3" means
-		"span 3 units"). These sizes are in "rem" units when used inside panels that don't
-		use a size modifier, and in percentage units when used inside panels that do.
-
-		Ethereal includes span modifiers ranging from 0.25 units ("span-0-25") to 10 units
-		("span-10"). Here's a partial list:
-
-		span-0-25     Span 0.25 units.
-		span-0-5      Span 0.5 units.
-		span-0-75     Span 0.75 units.
-		span-1        Span 1 unit.
-		span-1-25     Span 1.25 units.
-		span-1-5      Span 1.5 units.
-		span-1-75     Span 1.75 units.
-		...
-		span-9        Span 9 units.
-		span-9-25     Span 9.25 units.
-		span-9-5      Span 9.5 units.
-		span-9-75     Span 9.75 units.
-		span-10       Span 10 units.
-
-
-	Major Elements
-	==============
-
-		Most of Ethereal's elements are pretty much what you'd expect, but there are a handful
-		of "major" ones that warrant a bit more explanation:
-
-
-		Panel
-		------
-
-			The primary building block of Ethereal.
-
-			HTML
-
-				<section class="panel (size modifier) (color modifier)">
-					<div class="intro (color modifier)">
-						(intro content)
-					</div>
-					<div class="inner (inner modifiers) (color modifier)">
-						(inner content)
-					</div>
-				</section>
-
-				Note: The entire "intro" child element can be excluded.
-				Note: You can have as many "intro" and "inner" child elements as you like.
-
-			Modifiers
-
-				Size
-
-					small          Use small size.
-					medium         Use medium size.
-					large          Use large size.
-
-				Color
-
-					color0         Use background color 0 (gradient).
-					color1         Use background color 1.
-					color2         Use background color 2.
-					color3         Use background color 3.
-					color4         Use background color 4.
-					color1-alt     Use background color 1 (alt).
-					color2-alt     Use background color 2 (alt).
-					color3-alt     Use background color 3 (alt).
-					color4-alt     Use background color 4 (alt).
-
-				Inner
-
-					columns        Divides child elements into columns.
-					aligned        When used with "columns", aligns content to top of panel.
-					divided        When used with "columns", separates each column with a vertical line.
-
-			Examples
-
-				Here's a very basic example:
-
-					<section class="panel medium color0">
-						<div class="intro">
-							<h2 class="major">Panel</h2>
-							<p>Just a generic panel.</p>
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
 						</div>
-						<div class="inner">
-							<p>Lorem ipsum dolor sit amet.</p>
-						</div>
-					</section>
-
-				And here's a more advanced example using columns and *no* size modifier:
-
-					<section class="panel color2">
-						<div class="intro">
-							<h2 class="major">Panel</h2>
-							<p>Just a generic panel.</p>
-						</div>
-						<div class="inner columns">
-							<div class="span-4">
-								<p>This column is 4 units wide.</p>
-							</div>
-							<div class="span-3">
-								<p>This column is 3 units wide.</p>
-							</div>
-							<div class="span-2">
-								<p>This column is 2 units wide.</p>
+						<div class="content">
+							<div class="inner">
+								<h1>Dimension</h1>
+								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
+								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
 							</div>
 						</div>
-					</section>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#work">Work</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
 
-				Note: The "intro" child element already has a fixed width, so a span modifier
-				isn't required.
+				<!-- Main -->
+					<div id="main">
 
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Intro</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+							</article>
 
-		Panel (Banner)
-		--------------
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Work</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
+								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+							</article>
 
-			The "Banner" variant of a regular panel.
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+							</article>
 
-			HTML
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
 
-				<section class="panel banner (size modifier) (color modifier) (orientation modifier)">
-					<div class="content (color modifier)">
-						(content)
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
 					</div>
-					<div class="image (image modifiers)" data-position="(image position modifier)">
-						<img src="(image URL)" alt="" />
-					</div>
-				</section>
 
-			Modifiers
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
 
-				Orientation
+			</div>
 
-					left           Content on the left, image on the right.
-					right          Content on the right, image on the left.
+		<!-- BG -->
+			<div id="bg"></div>
 
-				Image
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-					filtered       Applies a gradient filter to the image.
-					tinted         Applies a tint filter to the image.
-
-				Image Position (required)
-
-					top left       Position image in the top-left corner.
-					top            Position image along the top edge.
-					top right      Position image in the top-right corner.
-					right          Position image along the right edge.
-					bottom right   Position image in the bottom-right corner.
-					bottom         Position image along the bottom edge.
-					bottom left    Position image in the bottom-left corner.
-					left           Position image along the left edge.
-					center         Position image in the center.
-
-			Example
-
-				<section class="panel banner medium right">
-					<div class="content color0">
-						<h1>Banner</h1>
-						<p>Lorem ipsum dolor sit amet.</p>
-					</div>
-					<div class="image" data-position="center">
-						<img src="/path/to/image.jpg" alt="" />
-					</div>
-				</section>
-
-
-		Panel (Spotlight)
-		-----------------
-
-			The "Spotlight" variant of a regular panel.
-
-			HTML
-
-				<section class="panel spotlight (size modifier) (orientation modifier)">
-					<div class="content (span modifier)">
-						(content)
-					</div>
-					<div class="image (image modifiers)" data-position="(image position modifier)">
-						<img src="(image URL)" alt="" />
-					</div>
-				</section>
-
-			Modifiers
-
-				Orientation
-
-					left           Content on the left.
-					right          Content on the right.
-
-				Image
-
-					filtered       Applies a gradient filter to the image.
-					tinted         Applies a tint filter to the image.
-
-				Image Position (required)
-
-					top left       Position image in the top-left corner.
-					top            Position image along the top edge.
-					top right      Position image in the top-right corner.
-					right          Position image along the right edge.
-					bottom right   Position image in the bottom-right corner.
-					bottom         Position image along the bottom edge.
-					bottom left    Position image in the bottom-left corner.
-					left           Position image along the left edge.
-					center         Position image in the center.
-
-			Example
-
-				<section class="panel spotlight large right">
-					<div class="content">
-						<h1>Spotlight</h1>
-						<p>Lorem ipsum dolor sit amet.</p>
-					</div>
-					<div class="image" data-position="center">
-						<img src="/path/to/image.jpg" alt="" />
-					</div>
-				</section>
-
-
-		Gallery
-		-------
-
-			A lightbox-enabled gallery.
-
-			HTML
-
-				<div class="gallery">
-					<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-						<img src="(thumbnail image URL)" alt="" />
-					</a>
-					<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-						<img src="(thumbnail image URL)" alt="" />
-					</a>
-					<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-						<img src="(thumbnail image URL)" alt="" />
-					</a>
-					<div class="group (span modifier)">
-						<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-							<img src="(thumbnail image URL)" alt="" />
-						</a>
-						<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-							<img src="(thumbnail image URL)" alt="" />
-						</a>
-						<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-							<img src="(thumbnail image URL)" alt="" />
-						</a>
-						<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
-							<img src="(thumbnail image URL)" alt="" />
-						</a>
-						...
-					</div>
-					...
-				</div>
-
-				Note: The "group" element creates a dual-row group of images. Images inside this group will
-				automatically wrap to the next row when they exceed its width (as defined by its span modifier).
-				You can have as many groups in a gallery as you like.
-
-			Modifiers
-
-				Image
-
-					filtered       Applies a gradient filter to the image.
-					tinted         Applies a tint filter to the image.
-
-				Image Position (required)
-
-					top left       Position image in the top-left corner.
-					top            Position image along the top edge.
-					top right      Position image in the top-right corner.
-					right          Position image along the right edge.
-					bottom right   Position image in the bottom-right corner.
-					bottom         Position image along the bottom edge.
-					bottom left    Position image in the bottom-left corner.
-					left           Position image along the left edge.
-					center         Position image in the center.
-
-			Example
-
-				<div class="gallery">
-					<a href="/images/thumbnails/01.jpg" class="image filtered span-2" data-position="center">
-						<img src="/images/fulls/01.jpg" alt="" />
-					</a>
-					<a href="/images/thumbnails/02.jpg" class="image filtered span-4" data-position="center">
-						<img src="/images/fulls/02.jpg" alt="" />
-					</a>
-					<div class="group span-4">
-						<a href="/images/thumbnails/03.jpg" class="image filtered span-2" data-position="center">
-							<img src="/images/fulls/03.jpg" alt="" />
-						</a>
-						<a href="/images/thumbnails/04.jpg" class="image filtered span-2" data-position="center">
-							<img src="/images/fulls/04.jpg" alt="" />
-						</a>
-						<a href="/images/thumbnails/05.jpg" class="image filtered span-2" data-position="center">
-							<img src="/images/fulls/05.jpg" alt="" />
-						</a>
-						<a href="/images/thumbnails/06.jpg" class="image filtered span-2" data-position="center">
-							<img src="/images/fulls/06.jpg" alt="" />
-						</a>
-					</div>
-				</div>
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		normalizeWheel (@miorel + @pieterv of Facebook)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+	</body>
+</html>
