@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Dimension:Dilemma by HTML5 UP</title>
+		<title>Eugene's Boredom Creatives by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,14 +24,14 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Dimension</h1>
-								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+								<h1>Boredom Creatives</h1>
+								<p>A Hi everyone! Eugene here. See my creative works made by my boredom. I tend to do random works and pieces when I usually get bored.
+								Also, I take it as a free time. Enjoy viewing! ^^</p>
 							</div>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
+								<li><a href="#intro">Visualizers</a></li>
 								<li><a href="#work">Work</a></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#contact">Contact</a></li>
